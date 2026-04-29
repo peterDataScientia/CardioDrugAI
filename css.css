@@ -1,119 +1,178 @@
 /* =========================================================
-GLOBAL SETTINGS
+   GLOBAL APP STYLING
 ========================================================= */
-body, .stApp {
-    font-family: 'Segoe UI', sans-serif;
-    color: #EAEAEA;
-    background-color: transparent;
+
+.stApp {
+    background: linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.block-container {
+    padding: 2rem 2.5rem;
 }
 
 /* =========================================================
-HEADERS / TITLES
+   SIDEBAR
 ========================================================= */
-.qsar-title {
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px 0;
-    color: #00FFC6;
-}
 
-.qsar-title.results {
-    color: #FFD166;
-}
-
-/* =========================================================
-SIDEBAR
-========================================================= */
 section[data-testid="stSidebar"] {
-    background-color: rgba(20, 20, 20, 0.9);
+    background: linear-gradient(180deg, #0f172a, #111827);
 }
 
 section[data-testid="stSidebar"] * {
-    color: #EAEAEA !important;
+    color: #e5e7eb !important;
+}
+
+/* Sidebar buttons spacing (optional improvement) */
+section[data-testid="stSidebar"] button {
+    margin-bottom: 0.4rem;
 }
 
 /* =========================================================
-BUTTONS
+   TITLES
 ========================================================= */
-button {
-    background-color: #00FFC6 !important;
-    color: #000 !important;
-    border-radius: 8px !important;
-    font-weight: bold !important;
+
+.qsar-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: linear-gradient(90deg, #e0e7ff, #f1f5f9);
+    border-left: 5px solid #2563eb;
+}
+
+.qsar-title.results {
+    background: linear-gradient(90deg, #dcfce7, #f0fdf4);
+    border-left: 5px solid #10b981;
+}
+
+/* =========================================================
+   CARD UI
+========================================================= */
+
+.qsar-card {
+    background: white;
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+/* =========================================================
+   INPUT AREA
+========================================================= */
+
+.stTextArea textarea {
+    background: #f0f9ff !important;
+    border: 1.5px solid #93c5fd !important;
+    border-radius: 12px !important;
+    min-width: 280px !important;
+    max-width: 420px !important;
+    height: 120px !important;
+    padding: 12px !important;
+    resize: horizontal !important;
+}
+
+/* Text input fields */
+.stTextInput input {
+    background: #0793f0 !important;
+    border: 2.5px solid #f008dc !important;
+    border-radius: 12px !important;
+    min-width: 180px !important;
+    max-width: 420px !important;
+    height: 50px !important;
+    padding: 12px !important;
+    resize: horizontal !important;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.stButton > button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
     border: none !important;
-    padding: 8px 12px !important;
+    padding: 0.5rem 1rem !important;
 }
 
-button:hover {
-    background-color: #00d9a8 !important;
+.stButton > button:hover {
+    opacity: 0.92;
+    transform: scale(1.01);
+}
+
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+    border: none !important;
 }
 
 /* =========================================================
-INPUT FIELDS
+   DATA TABLE STYLING
 ========================================================= */
-input, textarea {
-    background-color: rgba(255,255,255,0.1) !important;
-    color: #FFFFFF !important;
-    border-radius: 6px !important;
+
+.qsar-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+
+.qsar-table th {
+    background-color: #8000ff;
+    color: white;
+    padding: 6px;
+    text-align: left;
+}
+
+.qsar-table td {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.qsar-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.qsar-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.qsar-table tr:hover {
+    background-color: #f1f5f9;
 }
 
 /* =========================================================
-DATAFRAME / TABLE
+   SCROLLABLE TABLE CONTAINER
 ========================================================= */
-[data-testid="stDataFrame"] {
-    background-color: rgba(255,255,255,0.05) !important;
+
+.qsar-scroll-table {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
     border-radius: 10px;
-    padding: 5px;
-}
-
-/* Fix table text visibility */
-[data-testid="stDataFrame"] div {
-    color: #EAEAEA !important;
+    border: 1px solid #e5e7eb;
 }
 
 /* =========================================================
-PROGRESS BAR
+   PROGRESS / STATUS TEXT
 ========================================================= */
-.stProgress > div > div > div > div {
-    background-color: #00FFC6 !important;
+
+.status-text {
+    font-size: 0.9rem;
+    color: #0f64ee;
+    margin-top: 0.5rem;
 }
 
 /* =========================================================
-DOWNLOAD BUTTON
+   SMALL UX IMPROVEMENTS
 ========================================================= */
-.stDownloadButton button {
-    background-color: #FFD166 !important;
-    color: black !important;
-}
 
-/* =========================================================
-IMAGES
-========================================================= */
-img {
-    border-radius: 10px;
-}
-
-/* =========================================================
-MOBILE RESPONSIVENESS
-========================================================= */
-@media (max-width: 768px) {
-
-    .qsar-title {
-        font-size: 18px !important;
-    }
-
-    img {
-        max-height: 100px !important;
-        object-fit: contain;
-    }
-
-    button {
-        width: 100% !important;
-        font-size: 14px !important;
-    }
-
-    input, textarea {
-        font-size: 14px !important;
-    }
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
 }
