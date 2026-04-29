@@ -1,0 +1,178 @@
+/* =========================================================
+   GLOBAL APP STYLING
+========================================================= */
+
+.stApp {
+    background: linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.block-container {
+    padding: 2rem 2.5rem;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0f172a, #111827);
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e5e7eb !important;
+}
+
+/* Sidebar buttons spacing (optional improvement) */
+section[data-testid="stSidebar"] button {
+    margin-bottom: 0.4rem;
+}
+
+/* =========================================================
+   TITLES
+========================================================= */
+
+.qsar-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: linear-gradient(90deg, #e0e7ff, #f1f5f9);
+    border-left: 5px solid #2563eb;
+}
+
+.qsar-title.results {
+    background: linear-gradient(90deg, #dcfce7, #f0fdf4);
+    border-left: 5px solid #10b981;
+}
+
+/* =========================================================
+   CARD UI
+========================================================= */
+
+.qsar-card {
+    background: white;
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+/* =========================================================
+   INPUT AREA
+========================================================= */
+
+.stTextArea textarea {
+    background: #f0f9ff !important;
+    border: 1.5px solid #93c5fd !important;
+    border-radius: 12px !important;
+    min-width: 280px !important;
+    max-width: 420px !important;
+    height: 120px !important;
+    padding: 12px !important;
+    resize: horizontal !important;
+}
+
+/* Text input fields */
+.stTextInput input {
+    background: #0793f0 !important;
+    border: 2.5px solid #f008dc !important;
+    border-radius: 12px !important;
+    min-width: 180px !important;
+    max-width: 420px !important;
+    height: 50px !important;
+    padding: 12px !important;
+    resize: horizontal !important;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.stButton > button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stButton > button:hover {
+    opacity: 0.92;
+    transform: scale(1.01);
+}
+
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+    border: none !important;
+}
+
+/* =========================================================
+   DATA TABLE STYLING
+========================================================= */
+
+.qsar-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+
+.qsar-table th {
+    background-color: #8000ff;
+    color: white;
+    padding: 6px;
+    text-align: left;
+}
+
+.qsar-table td {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.qsar-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.qsar-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.qsar-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* =========================================================
+   SCROLLABLE TABLE CONTAINER
+========================================================= */
+
+.qsar-scroll-table {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+/* =========================================================
+   PROGRESS / STATUS TEXT
+========================================================= */
+
+.status-text {
+    font-size: 0.9rem;
+    color: #0f64ee;
+    margin-top: 0.5rem;
+}
+
+/* =========================================================
+   SMALL UX IMPROVEMENTS
+========================================================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
