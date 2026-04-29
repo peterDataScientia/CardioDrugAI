@@ -15,7 +15,7 @@ from StreamJSME import StreamJSME
 # =========================================================
 # CONFIG
 # =========================================================
-st.set_page_config(page_title="TNF-α QSAR Engine", page_icon="icon.png", layout="wide")
+st.set_page_config(page_title="CardioDrugAI", page_icon="icon.png", layout="wide")
 RDLogger.DisableLog("rdApp.*")
 
 if "page" not in st.session_state:
